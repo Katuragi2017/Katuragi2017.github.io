@@ -25,20 +25,21 @@ input{width:100%;
 <h1>問題３</h1>
 <h2>チョコレートの意味は？</h2>
 <img src="choco.jpg" class="spimg">
-<div><a href="#" onclick="mactigai()"></a>泥水</div>
-<div><a href="#" onclick="sekai()">苦い水</a></div>       
+<div><a href="#" onclick="machigai()">泥水</a></div>
+<div><a href="#" onclick="seikai()">苦い水</a></div>       
 </div>
 <script>
     
-    var hit=0;
+    var hit=Number(localStorage.hit);
     
     function machigai(){
                     localStorage.hit=hit;
                     location.href="kekka.html";}
     
-    function seikai(){hit=hit+1;
+    function seikai(){
+        hit=hit+1;
         localStorage.hit=hit;
-                       location.href="kekka.html";}
+        location.href="kekka.html";}
         
 </script>
     
