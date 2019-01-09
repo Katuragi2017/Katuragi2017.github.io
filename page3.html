@@ -32,11 +32,12 @@ input{width:100%;
     
     var hit=0;
     
-    function machigai(){hit=hit+1;
+    function machigai(){
                     localStorage.hit=hit;
                     location.href="kekka.html";}
     
-    function seikai(){localStorage.hit=hit;
+    function seikai(){hit=hit+1;
+        localStorage.hit=hit;
                        location.href="kekka.html";}
         
 </script>
